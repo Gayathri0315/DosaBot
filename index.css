@@ -1,0 +1,112 @@
+.dosa-hub,
+.no1-dosa-palace {
+  position: absolute;
+  left: 119px;
+}
+.dosa-hub {
+  top: 72px;
+  font-size: var(--font-size-45xl);
+  color: var(--color-tomato);
+  text-align: left;
+}
+.no1-dosa-palace {
+  top: 168px;
+  font-size: var(--font-size-13xl);
+  color: var(--text-color);
+}
+.frame-child {
+  border: 0;
+  background-color: var(--color-mistyrose);
+  position: absolute;
+  color:white;
+  font-size:20px;
+  top: 501px;
+  left: 49px;
+  border-radius: var(--br-8xs) 0 0 var(--br-8xs);
+  width: 622px;
+  height: 60px;
+}
+.frame-child2 {
+  border: 0;
+  background-color: tomato;
+  position: absolute;
+  color:white;
+  font-size:20px;
+  top: 506px;
+  left: 579px;
+  border-radius: var(--br-8xs) 0 0 var(--br-8xs);
+  width: 92px;
+  height: 50px;
+}
+.mic-icon {
+  position: relative;
+  width: 48.7px;
+  height: 47.58px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-parent,
+.mic-icon-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+}
+.mic-icon-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-23xl);
+  background-color: var(--color-tomato);
+  top: 501px;
+  left: 681px;
+  border-radius: 0 var(--br-8xs) var(--br-8xs) 0;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent {
+  top: 365px;
+  left: 119px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro);
+  border: 2px solid var(--color-tomato);
+  width: 863px;
+  height: 609px;
+}
+.macbook-pro-16-1-child {
+  position: absolute;
+  top: 233px;
+  left: 1030px;
+  width: 582px;
+  height: 844px;
+  object-fit: cover;
+}
+.i-am-your,
+.waiter {
+  position: absolute;
+  top: 370px;
+  left: 1403px;
+  font-weight: 500;
+}
+.waiter {
+  top: 425px;
+}
+.mingcutearrow-up-fill-icon {
+  position: absolute;
+  top: 846px;
+  left: 1004px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.macbook-pro-16-1 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1117px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-gray);
+  font-family: var(--font-poppins);
+}
