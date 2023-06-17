@@ -6,7 +6,7 @@ body {
   background-size: 100%;
 }
 #text{
-  margin-left: 47%;
+  margin-left: 40%;
   margin-top:-45%;
   font-family: cursive;
   font-size: 18px;
@@ -17,7 +17,7 @@ body {
   background-color: rgba(236, 90, 28, 0.605);
 }
 #text:hover{
-  margin-left: 47%;
+  margin-left: 40%;
   margin-top:-45%;
   font-family: cursive;
   font-size: 18px;
@@ -38,7 +38,7 @@ header a:hover{
 }
 #chat-window {
   width: 500px;
-  margin:10%;
+  margin:5%;
   background-color: rgb(213, 106, 67);
   padding: 10px;
   border-radius: 10px;
@@ -47,9 +47,10 @@ header a:hover{
 #waiter{
   float: right;
   width:25%;
-  height:70%;
-  margin-top: -20%;
-  margin-left: -50%;
+  height:80%;
+  margin-top: -10%;
+  margin-left: -40%;
+  margin-right:10%;
 }
 #chat-messages {
   padding: 10px;
