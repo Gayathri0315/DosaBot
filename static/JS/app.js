@@ -77,4 +77,7 @@ form.addEventListener("submit", async (e) => {
   messages.innerHTML += `<div class="message bot-message">
   <img src="static/chatbot.png" alt="bot icon"> <span>${chatbotResponse}</span>
   </div>`;
+
+  // Scroll to the bottom of the messages
+  messages.scrollTop = messages.scrollHeight;
 });

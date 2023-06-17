@@ -53,13 +53,11 @@ header a:hover{
   margin-right:10%;
 }
 #chat-messages {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
   height: calc(100vh - 200px);
   max-height: calc(100vh - 200px);
   overflow: auto;
 }
+
 
 #chat-form {
   display: flex;
@@ -83,14 +81,29 @@ button[type="submit"] {
   font-size: 1rem;
   font-weight: bold;
 }
+/* Hide the scrollbar */
+#chat-messages::-webkit-scrollbar {
+  width: 0.5em; /* Adjust the width as needed */
+}
+
+#chat-messages::-webkit-scrollbar-track {
+  background-color: transparent; /* Change the color or remove it if not needed */
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Change the color or remove it if not needed */
+}
+
 .bot-message {
   font-family: "Roboto", sans-serif;
   background-color: #fffbf5; /* different light color */
   text-align: justify; /* keep it right-aligned */
-  padding: 15px; /* added padding */
+  padding: 10px; /* added padding */
   margin-top: 10px; /* added margin-top to create a gap */
   margin-bottom: 10px;
   display: flex;
+  margin-left:5%;
+  width:fit-content;
   align-items: center;
   font-style: italic;
   border-radius: 15px;
@@ -101,8 +114,10 @@ button[type="submit"] {
   font-family: "Nunito", sans-serif;
   background-color: #f7efe5; /* light color */
   text-align: left; /* changed text align to left */
-  padding: 15px; /* added padding */
+  padding: 10px; /* added padding */
   display: flex;
+  width:fit-content;
+  margin-right: 10%;
   align-items: center;
   font-style: italic;
   border-radius: 20px 15px 0px 20px;
@@ -121,8 +136,7 @@ button[type="submit"] {
 .main-title {
   font-size: 1.5rem;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: cursive;
   margin-bottom: 0.5rem;
   color: #fffbf5;
-  font-style: italic;
 }
