@@ -46,7 +46,7 @@ form.addEventListener("submit", async (e) => {
   input.value = "";
 
   messages.innerHTML += `<div class="message user-message">
-  <img src="./icons/user.png" alt="user icon"> <span>${message}</span>
+  <img src="static/user.png" alt="user icon"> <span>${message}</span>
   </div>`;
 
   chatHistory.push({ role: "user", content: message });
@@ -75,6 +75,6 @@ form.addEventListener("submit", async (e) => {
   chatHistory.push({ role: "system", content: chatbotResponse });
 
   messages.innerHTML += `<div class="message bot-message">
-  <img src="./icons/chatbot.png" alt="bot icon"> <span>${chatbotResponse}</span>
+  <img src="static/chatbot.png" alt="bot icon"> <span>${chatbotResponse}</span>
   </div>`;
 });
