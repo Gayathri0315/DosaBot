@@ -1,7 +1,7 @@
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const messages = document.getElementById("chat-messages");
-const apiKey = "";
+const apiKey = "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";
 
 const context = [
   {
@@ -56,7 +56,7 @@ form.addEventListener("submit", async (e) => {
     "https://api.openai.com/v1/completions",
     {
       prompt: chatHistory.map((msg) => msg.content).join("\n"),
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo",
       temperature: 0,
       max_tokens: 1000,
       top_p: 1,

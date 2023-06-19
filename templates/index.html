@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -12,10 +13,10 @@
 
       <nav class="navbar navbar-light justify-content-end" style="background-color: rgb(224, 161, 138);">
         <!-- Navbar content -->
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtYiFdVfdRT0YRyRePCtKjAFWWdxNC86LaA&usqp=CAU" style="width:5%;margin-left:1%;border-radius:50%">&nbsp;&nbsp;
-        <h1 style="float: left; color:white;font-family:ponyclub;margin-right: 70%;font-size: 24px;">DosaHub</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtYiFdVfdRT0YRyRePCtKjAFWWdxNC86LaA&usqp=CAU" style="width:5%;margin-top:1%;border-radius:50%">&nbsp;&nbsp;
+        <h1 style="margin-top:1%;color:white;font-family:ponyclub;margin-right:60%;font-size: 24px;">DosaHub</h1>
         
-      <ul class="nav justify-content-end">
+      <ul class="nav justify-content-end" style="margin-right: 10%;">
         
         <li class="nav-item">
           <a class="nav-link" style="color: rgb(247, 245, 244);" href="#">ABOUT US</a>
@@ -23,11 +24,100 @@
         <li class="nav-item">
           <a class="nav-link" style="color: rgb(247, 245, 244);" href="#">FAQ'S</a>
         </li>
-
       </ul>
       </nav>
     </header>
-    <div>
+ <!-- <img src="static/waiter.png" id="waiter" style="max-width:40%;height:50%;float:left"> -->
+<!-- <p id="text" style="float:right;width:40%">Hello! &#128512;<br><b>Welcome to Dosa Palace</b><br>You are at the right place to order dosa.You can use the chatbot to place your order.</p>
+          -->
+  <div style="width:100%" id="main-content">
+    <!-- <div id="table-content">
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Item</th>
+          <th colspan="2">Cost (in Rs.)</th>
+        </tr>
+        <tr>
+          <th>Large</th>
+          <th>Small</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Masala dosa</td>
+          <td>12.95</td>
+          <td>10.05</td>
+        </tr>
+        <tr>
+          <td>Onion dosa</td>
+          <td>10.95</td>
+          <td>9.25</td>
+        </tr>
+        <tr>
+          <td>Plain dosa</td>
+          <td>9.10</td>
+          <td>8.75</td>
+        </tr>
+        <tr>
+          <td>Ravva dosa</td>
+          <td>11.95</td>
+          <td>9.75</td>
+        </tr>
+        <tr>
+          <td>Onion Ravva dosa</td>
+          <td>12.50</td>
+          <td>16.00</td>
+        </tr>
+        <tr>
+          <td>Pesarattu</td>
+          <td>4.50</td>
+          <td>3.50</td>
+        </tr>
+        <tr>
+          <td colspan="3"><strong>Chutneys:</strong></td>
+        </tr> 
+        <tr>
+          <td>Coconut chutney</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Sambar</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Ginger chutney</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Pudhina chutney</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td colspan="3"><strong>Drinks:</strong></td>
+        </tr>
+        <tr>
+          <td>Tea</td>
+          <td></td>
+          <td>3.00</td>
+        </tr>
+        <tr>
+          <td>Coffee</td>
+          <td></td>
+          <td>3.00</td>
+        </tr>
+        <tr>
+          <td>Bottled water</td>
+          <td></td>
+          <td>5.00</td>
+        </tr>
+      </tbody>
+    </table>
+    </div> -->
     <div id="chat-window">
       <div class="main-title">Welcome to DosaBOT</div>
       <div id="chat-messages"></div>
@@ -39,16 +129,101 @@
           placeholder="Type your message here"
           required
         />
-        <button type="submit"><i class="fa fa-paper-plane-o fa-lg" style="color: rgb(213, 106, 67)"></i></button>&nbsp;
+        <button type="submit"><i class="fa fa-paper-plane-o fa-lg"></i></button>&nbsp;
         <button type="submit"><i class="fa fa-microphone fa-lg"></i></button>
       </form>
     </div>
-    <div>
-    <div><p id="text" align="justify">Hello! &#128512;<br><b>Welcome to Dosa Palace</b><br><br>You are at the right place to order for dosa.<br>You can use the chatbot present over here to place your order.</p>
-    </div> <img src="static/waiter.png" id="waiter">
     </div>
-    </div>
+    <div id="table-content" align="center">
+      <h1 style="background-color: rgba(255, 99, 71, 0.619);color: white;width:20%;border-radius: 10px;">Menu</h1>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">Item</th>
+            <th colspan="2">Cost (in Rs.)</th>
+          </tr>
+          <tr>
+            <th>Large</th>
+            <th>Small</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Masala dosa</td>
+            <td>12.95</td>
+            <td>10.05</td>
+          </tr>
+          <tr>
+            <td>Onion dosa</td>
+            <td>10.95</td>
+            <td>9.25</td>
+          </tr>
+          <tr>
+            <td>Plain dosa</td>
+            <td>9.10</td>
+            <td>8.75</td>
+          </tr>
+          <tr>
+            <td>Ravva dosa</td>
+            <td>11.95</td>
+            <td>9.75</td>
+          </tr>
+          <tr>
+            <td>Onion Ravva dosa</td>
+            <td>12.50</td>
+            <td>16.00</td>
+          </tr>
+          <tr>
+            <td>Pesarattu</td>
+            <td>4.50</td>
+            <td>3.50</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Chutneys:</strong></td>
+          </tr> 
+          <tr>
+            <td>Coconut chutney</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Sambar</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Ginger chutney</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Pudhina chutney</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Drinks:</strong></td>
+          </tr>
+          <tr>
+            <td>Tea</td>
+            <td></td>
+            <td>3.00</td>
+          </tr>
+          <tr>
+            <td>Coffee</td>
+            <td></td>
+            <td>3.00</td>
+          </tr>
+          <tr>
+            <td>Bottled water</td>
+            <td></td>
+            <td>5.00</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
     <script src="static/JS/app.js"></script>
   </body>
+
 </html>
