@@ -60,8 +60,10 @@ div td {
   color:white;
   background-color: rgba(236, 90, 28, 0.605);
 }
-
-header a:hover{
+.container-fluid a{
+  border-radius: 20px;
+}
+.container-fluid a:hover{
   background-color:rgb(199, 26, 26);
   border-radius: 20px;
 }
