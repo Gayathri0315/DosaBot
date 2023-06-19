@@ -1,8 +1,8 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-color:rgba(244, 212, 194, 0.584);
+  background-color:rgba(81, 199, 85, 0.584);
   /* background-image: url(https://t3.ftcdn.net/jpg/02/52/63/16/360_F_252631636_qnuNZp2bx1rjXJt2ydrsMVRTaMA1Nd43.jpg);/*
-  background-image: url("/static/waiter.png");*/
+  background-image: url("/static/waiter.png"); */
   background-repeat: no-repeat;
   background-size:16%;
   background-position: center; 
@@ -20,16 +20,35 @@ header {
 }
 
 #chat-window {
-  width: 600px;
-  height:80%;
-  margin-left: 30%;
+  width:620px;
+  height:670px;
   background-image:linear-gradient(to right,rgba(237, 155, 125, 0.789),rgba(237, 155, 125, 0.258));
   padding: 10px;
   border:2px solid tomato;
   border-radius: 10px;
+  margin-top: 2%;
 }
  
-
+div table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-top:2%;
+}
+div th{
+  border: 2px solid rgb(244, 239, 239);
+  background-color: rgba(199, 99, 81, 0.967); ;
+  padding: 2px;
+  font-size: 18px;
+  color:white;
+  text-align:center;
+}
+div td {
+  border: 2px solid rgb(244, 239, 239);
+  background-color: rgba(255, 99, 71, 0.433); ;
+  padding: 2px;
+  font-size: 18px;
+  text-align:center;
+}
  #text{
   margin-left: 10%;
   margin-right:10%;
@@ -46,13 +65,6 @@ header a:hover{
   background-color:rgb(199, 26, 26);
   border-radius: 20px;
 }
-
-#waiter{
-  width:25%;
-  height:80%;
-  margin-left: 10%;
-  margin-right:10%;
-} 
 #chat-messages {
   height: calc(100vh - 200px);
   max-height: calc(100vh - 200px);
@@ -66,12 +78,12 @@ header a:hover{
 #chat-input {
   flex-grow: 1;
   padding: 10px;
-  margin-right: 10px;
+  margin-right:20px;
   border-radius: 20px;
   border: 1px solid tomato;
 }
 button[type="submit"] {
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 20px;
   background-color: #f7efe5;
   color: rgb(213, 106, 67);
@@ -81,7 +93,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 20px;
   background-color: tomato;
   color: rgb(253, 250, 249);
@@ -112,12 +124,11 @@ button[type="submit"]:hover {
   margin-right: 10%;
   display: flex;
   color:white;
-  margin-left:10%;
+  margin-left:5%;
   float:left;
   width:fit-content;
   align-items: center;
   font-style: italic;
-  border-radius: 15px;
   border-radius: 20px 15px 20px 0px;
 }
 
@@ -130,7 +141,7 @@ button[type="submit"]:hover {
   color:white;
   width:fit-content;
   float:right;
-  margin-right: 10%;
+  margin-right: 5%;
   align-items: center;
   font-style: italic;
   border-radius: 20px 15px 0px 20px;

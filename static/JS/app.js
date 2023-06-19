@@ -6,7 +6,7 @@ const apiKey = "";
 const context = [
   {
     role: "system",
-    content: `You are OrderBot, an automated service to collect orders for a street dosa. 
+    content: `You are OrderBot,an automated service to collect orders for a street dosa.
     You first greet the customer, then collect the order, 
     and then ask if it's a pickup or delivery. 
     You wait to collect the entire order, then summarize it and check for a final, all amounts are in Rupees. 
@@ -40,6 +40,7 @@ const context = [
 
 let chatHistory = [...context];
 
+
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const message = input.value;
@@ -56,7 +57,7 @@ form.addEventListener("submit", async (e) => {
     "https://api.openai.com/v1/completions",
     {
       prompt: chatHistory.map((msg) => msg.content).join("\n"),
-      model: "gpt-3.5-turbo",
+      model: "text-davinci-003",
       temperature: 0,
       max_tokens: 1000,
       top_p: 1,
